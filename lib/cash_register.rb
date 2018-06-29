@@ -1,3 +1,4 @@
+require 'pry'
 class CashRegister
 
 attr_accessor :total, :discount, :items, :cost
@@ -40,6 +41,7 @@ def void_last_transaction
   #create hast to associate last item purchased and cost
   #call on last item to give you cost and subtract from total.
   self.total.to_f - @cost.to_f
+  binding.pry
   @total
 end
 
