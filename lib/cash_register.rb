@@ -39,7 +39,7 @@ end
 def void_last_transaction
   #create hast to associate last item purchased and cost
   #call on last item to give you cost and subtract from total.
-  @total.to_f - @cost.to_f
+  self.total.to_f - @cost.to_f
   @total
 end
 
